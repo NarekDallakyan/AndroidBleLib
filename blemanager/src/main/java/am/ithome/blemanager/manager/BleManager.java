@@ -175,6 +175,10 @@ public class BleManager {
         }
     }
 
+    public void subscribeReadCharacteristic() {
+        System.out.println("wkdnkwndkwn");
+    }
+
     private void initCharacteristic() {
         mReadServices = new ArrayList<>();
         mReadCharacteristics = new ArrayList<>();
@@ -220,7 +224,5 @@ public class BleManager {
                 readPeriodicallyRssiValue(mTimerEnabled);
             }
         }, RSSI_UPDATE_TIME_INTERVAL);
-
-
     }
 }
